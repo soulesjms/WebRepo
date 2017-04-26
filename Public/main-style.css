@@ -1,34 +1,114 @@
 a:link {
-  color: #FFF;
-  text-decoration: none;
+	color: #FFF;
+	text-decoration: none;
 }
 a:hover, a:active, a:focus {
-  text-decoration: none;
-  color: #999;
+	text-decoration: none;
+	color: #999;
 }
 a:visited {
-  color: #FFF;
-  text-decoration: none;
+	color: #FFF;
+	text-decoration: none;
 }
 li {
-  list-style-type: none;
-  line-height 33px;
+	list-style-type: none;
+	line-height 33px;
 }
 h3 {
-  font-family: "starcraft";
+	font-family: "starcraft";
 }
-
-.container.myCont{
-	width:100%;
-	padding-right:0px;
-	padding-left:0px; 
+html {
+	background-color: #E6E6E6;
 }
-.carousel-inner > .item {
+html > body {
+	background-color: #E6E6E6;
+}
+#Nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+#Nav > ul > a {
+	display: block;
+	padding: 5px 20px;
+	float:left;
+}
+#Nav li {
+	float: left;
+}
+#Nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+#Nav li a:hover:not(.active) {
+	background-color: #111;
+}
+#Nav .active {
+	background-color: #ff9900;
+}
+#underMain {
+	margin:20px 5px 0px 5px;
+	padding: 20px;
+	background-color #fff;
+	max-width: 1300px;
+	background: #FFFFFF;
+	box-shadow: 3px 3px 5px #888888;
+}
+#Area {
+	margin-left: auto;
+	margin-right: auto;
+	background-color #fff;
+	max-width: 1300px;
+}
+#cols {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-top: 10px padding-bottom 600px;
+}
+#cols .Col {
+	padding: 20px;
+	margin: 20px 5px 20px 5px;
+	float: left;
+	width: 32.5%;
+	box-shadow: 3px 3px 5px #888888;
+	column-gap: 20px;
+	min-height: 450px;
+	background-color: #fff;
+}
+.container.myContainer {
+	width: 100%;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-top: -20px;
+}
+.carousel-inner>.item {
 	height: 380px;
 }
-
-
-.item > img {
-  position: center;
-  bottom: 0;
+.item>img {
+	position: absolute;
+	bottom: -100px;
+}
+@media (min-width: 1200px) {
+	.container.myContainer {
+		width: 100%;
+	}
+}
+@media (max-width: 900px) {
+	.container.myCont .carousel-inner>.item {
+		height: 250px;
+	}
+	#cols .Col {
+		width: 100%;
+	}
+}
+@media (max-width: 700px) {
+	.container.myCont .carousel-inner>.item {
+		height: 175px;
+	}
 }
