@@ -10,45 +10,41 @@ a:visited {
 	color: #FFF;
 	text-decoration: none;
 }
-li {
-	list-style-type: none;
-	line-height 33px;
-}
-h3 {
-	font-family: "starcraft";
-}
 html {
 	background-color: #E6E6E6;
 }
 html > body {
 	background-color: #E6E6E6;
 }
-#Nav ul {
+footer {
+	padding-bottom: 20px;
+}
+.Nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
 }
-#Nav > ul > a {
+.Nav > ul > a {
 	display: block;
 	padding: 5px 20px;
 	float:left;
 }
-#Nav li {
+.Nav li {
 	float: left;
 }
-#Nav li a {
+.Nav li a {
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
-#Nav li a:hover:not(.active) {
+.Nav li a:hover:not(.active) {
 	background-color: #111;
 }
-#Nav .active {
+.Nav .active {
 	background-color: #ff9900;
 }
 #underMain {
@@ -59,7 +55,7 @@ html > body {
 	background: #FFFFFF;
 	box-shadow: 3px 3px 5px #888888;
 }
-#Area {
+.Area {
 	margin-left: auto;
 	margin-right: auto;
 	background-color #fff;
@@ -81,11 +77,21 @@ html > body {
 	min-height: 450px;
 	background-color: #fff;
 }
+.margin-top15 {
+	margin-top:15px;
+}
+.row-padding {
+	padding: 0px 8px 0px 8px;
+}
+footer {
+	background-color: #333;
+	color: #fff;
+}
 .container.myContainer {
 	width: 100%;
 	padding-right: 0px;
 	padding-left: 0px;
-	margin-top: -20px;
+	margin-top: -22px;
 }
 .carousel-inner>.item {
 	height: 380px;
