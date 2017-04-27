@@ -11,7 +11,6 @@ a:visited {
 	text-decoration: none;
 }
 li {
-	list-style-type: none;
 	line-height 33px;
 }
 html {
@@ -72,7 +71,7 @@ footer {
 	padding: 20px;
 	box-shadow: 3px 3px 5px #888888;
 	column-gap: 20px;
-	min-height: 550px;
+	max-height: 550px;
 	background-color: #fff;
 	margin-top: 8px;
 }
@@ -85,12 +84,12 @@ footer {
 	text-align: stretch;
 }
 .carousel-inner>.item {
-	height: 380px;
+	height: 430px;
 }
 .item>img {
 	position: absolute;
-	min-height:380px;
-	top: -50%;
+	min-height:430px;
+	top: -70%;
 }
 @media (max-width: 1030px) {
 	.item>img {
