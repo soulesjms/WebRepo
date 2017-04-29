@@ -93,8 +93,27 @@
 						I can provide technologies such as HTML5, CSS3, jQuery, Javascript, SQL, PHP, 
 						Bootstrap, Angular, XML and more.
 						<hr>
-						I will be putting a box here to send me messages if you're interested.
-						Thanks for your patience.
+						Send me message through the site!
+						
+						<form action="send_mail.php" method="post">
+							<div class="input-group <?php if($nameErr) echo 'form-control-warning'?>">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								<input class="form-control" name="name"  placeholder="Name" type="text" maxlength="100">
+							</div>
+							<div class="input-group <?php if($emailErr) echo 'form-control-warning'?>">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+								<input class="form-control" name="email_address" placeholder="Email Address" type="text" >
+							</div>
+							<div class="input-group <?php if($messageErr) echo 'form-control-warning'?>">
+								<textarea rows="5" cols="35" name="message" class="form-control" placeholder="Enter your message here." ></textarea>
+							</div>
+							<div style="float:right;">
+								<button type="submit" class="btn btn-default">Submit</button>
+								<input type="reset" class="btn btn-default">
+							</div>
+						</form>
+						This textbox sends me messages using PHP.
+						<div><?php echo $thankyou ?></div>
 					</div>
 				</div>
 				<div class="col-sm-4 col-md-4">
